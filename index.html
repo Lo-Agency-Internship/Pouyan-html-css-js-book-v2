@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Project- Technical documentation page (Part 1)!</title>
+  </head>
+  <body>
+    <!-- ---JavaScript logic goes here--- -->
+    <script>
+      function changeText1() {
+        document.getElementById("change-text").innerHTML =
+          `<p> HTML is short for <b>'HyperText Markup Language'</b> a language for creating the structure of a website.
+           <br>For example it defines where elements should be located</p>`;
+      }
+      function changeText2() {
+        document.getElementById("change-text").innerHTML =
+          ` <p> 
+            <ul>
+                <li> For starters, <b>'!DOCTYPE html'</b> is located at the first line of a HTML document </li>
+                <hr>
+                <li> and then we have  <b>'head'</b>  and  <b>'body'</b> </li>
+                <hr>
+                <li> <b>'meta'</b> and <b>'title'</b> tags and every thing else that is hiiden from the eye fo the user are placed in the <b>'head'</b> section </li>
+                <hr>
+                <li>  and our website content is situated in the <b>'body'</b> section</li>
+            <ul>
+            </p>`;
+      }
+      function changeText3() {
+        var tags = `<p>
+                        <ul>
+                            <li> <b>'html'</b> tag covers the whole document, it should at the beggings and end file, <br> it starts with < html > and needs to be closed with < /html > </li>
+                            <hr>
+                            <li> <b>'head'</b>  tag  is used to store 'meta data' tags and 'ttile' tag, <br> it starts with < head > and needs to be closed with < /head ></li>
+                            <hr>
+                            <li> <b>'title'</b> tag is to show the name of the website in browser tabs and bookmarks, <br> it starts with < title > and needs to be closed with < /title > </li>
+                            <hr>
+                            <li> <b>'meta'</b> tag in 'head' section is used to assign different charecteristic to the web site, for instance it has an attribute of charset="utf-8" which represents any character in the Unicode standard <br> it starts with < meta > and it doens not need to be closed </li>
+                            <hr>
+                            <li> <b>'body'</b>  tag  is used for the content of the website,  <br> it starts with < body > and needs to be closed with < /body > </li>
+                            <hr>
+                            <li> <b>'div'</b>  tag  is used for dividing different sections of a page, short for division, <br> it starts with < div > and needs to be closed with < /div ></li>
+                            <hr>
+                            <li> <b>'p'</b>  tag is intended for paragraphs they should be used with opening and closing tags, <br> it starts with < p > and needs to be closed with < /p > </li>
+                            <hr>
+                            <li> <b>'a'</b>  tag  is used for defining likns to other pages, it accompanied with 'href' attribure to point to the address of a page, <br> it starts with < a > and needs to be closed with < /a > </li>
+                            <hr>
+                            <li> <b>'link'</b>  tag  in 'head' section is used for linking different file to HTML document, it is accompanied with 'rel' and 'href' attribures, where 'rel' describes the type of relation and 'href' gives the location of that file, <br> it starts with < link > and it doens not need to be closed</li>
+                            <hr>
+                            <li> <b>'img'</b>  tag  is used to insert images into the HTML document, it accompanied with 'src' attribure to point to the location of the image, <br> it starts with < img > and it doens not need to be closed</li>
+                            <hr>
+                            <li> <b>'h1' to 'h6'</b>  tags  are used for heading, <br> it starts with < h1 > ... < h6 > and needs to be closed with < /h1 > ... < /h6 ></li>
+                            <hr>
+                            <li> <b>'ul'</b> tag is used to create an unordered list, <br> it starts with < ul > and needs to be closed with < /ul > </li>
+                            <hr>
+                            <li> <b>'ol'</b> tag is used to create an ordered list, <br> it starts with < ol > and needs to be closed with < /ol > </li>
+                            <hr>
+                            <li> <b>'li'</b> tag is used to create list items in <b>ul and ol</b> tags, <br> it starts with < li > and needs to be closed with < /li > </li>
+                            <hr>
+                            <li> <b>'em'</b> tag is used to put emphasize on a text, <br> it starts with < em > and needs to be closed with < /em > </li>
+                            <hr>
+                            <li> <b>'span'</b> tag is used to create an inline container which gives access to manipulate later with classes via CSS or JavaScript, <br> it starts with < span > and needs to be closed with < /span ></li>
+                        </ul>
+                    </p>`;
+      ;
+        document.getElementById("change-text").innerHTML = tags
+          }
+    </script>
+<!-- ---END of JS--- -->
+
+    <div>
+      <div style="left: 0; position: absolute; width: 30%; background-color: bisque;">
+        <ul>
+          <button onclick="changeText1()">
+            <li>HTML?</li>
+          </button>
+          <br>
+          <button onclick="changeText2()">
+            <li>Basic structure of an HTML document</li>
+          </button>
+          <br>
+          <button onclick="changeText3()">
+            <li>tags/elements</li>
+          </button>
+          <br>
+        </ul>
+      </div>
+      <div style="right: 0; position: absolute; width: 70%; background-color: rgb(247, 204, 151);">
+        <p id="change-text">
+          Please click on any subjects on left to see the definition here.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
+ 
