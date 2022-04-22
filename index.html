@@ -1,20 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>HTML Project- Technical documentation page (Part 1)!</title>
+    <link rel="stylesheet" href="style.css" />
+    <style type="text/css" media="screen, print">
+      @font-face {
+        font-family: "IM Fell English";
+        src: url("fonts/imFell/IMFellEnglish-Regular.ttf") format("truetype");
+      }
+      @font-face {
+        font-family: "Eczar";
+        src: url("fonts/eczar/static/Eczar-Regular.ttf") format("truetype");
+      }
+      @font-face {
+        font-family: "Square Peg";
+        src: url("fonts/Square_Peg/SquarePeg-Regular.ttf") format("truetype");
+      }
+    </style>
   </head>
   <body>
     <!-- ---JavaScript logic goes here--- -->
     <script>
       function changeText1() {
-        document.getElementById("change-text").innerHTML =
-          `<p> HTML is short for <b>'HyperText Markup Language'</b> a language for creating the structure of a website.
+        document.getElementById(
+          "change-text"
+        ).innerHTML = `<p> HTML is short for <b>'HyperText Markup Language'</b> a language for creating the structure of a website.
            <br>For example it defines where elements should be located</p>`;
       }
       function changeText2() {
-        document.getElementById("change-text").innerHTML =
-          ` <p> 
+        document.getElementById("change-text").innerHTML = ` <p> 
             <ul>
                 <li> For starters, <b>'!DOCTYPE html'</b> is located at the first line of a HTML document </li>
                 <hr>
@@ -62,30 +77,33 @@
                             <li> <b>'span'</b> tag is used to create an inline container which gives access to manipulate later with classes via CSS or JavaScript, <br> it starts with < span > and needs to be closed with < /span ></li>
                         </ul>
                     </p>`;
-      ;
-        document.getElementById("change-text").innerHTML = tags
-          }
+        document.getElementById("change-text").innerHTML = tags;
+      }
     </script>
-<!-- ---END of JS--- -->
+    <!-- ---END of JS--- -->
 
-    <div>
-      <div style="left: 0; position: absolute; width: 30%; background-color: black; color: wheat;">
+    <div class="main">
+      <header id="header">
+        This my collection of some concepts regarding HTML and future to come
+        keywords
+      </header>
+      <div class="leftSection">
         <ul>
           <button onclick="changeText1()">
             <li>HTML?</li>
           </button>
-          <br>
+          <br />
           <button onclick="changeText2()">
             <li>Basic structure of an HTML document</li>
           </button>
-          <br>
+          <br />
           <button onclick="changeText3()">
             <li>tags/elements</li>
           </button>
-          <br>
+          <br />
         </ul>
       </div>
-      <div style="right: 0; position: absolute; width: 70%; background-color: rgb(247, 204, 151);">
+      <div class="rightSection">
         <p id="change-text">
           Please click on any subjects on left to see the definition here.
         </p>
@@ -93,4 +111,3 @@
     </div>
   </body>
 </html>
- 
