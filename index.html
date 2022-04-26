@@ -22,13 +22,13 @@
   <body>
     <!-- ---JavaScript logic goes here--- -->
     <script>
-      function changeText1() {
+      function changeTextOfHtml() {
         document.getElementById(
           "change-text"
         ).innerHTML = `<p> HTML is short for <b>'HyperText Markup Language'</b> a language for creating the structure of a website.
            <br>For example it defines where elements should be located</p>`;
       }
-      function changeText2() {
+      function changeTextOfBasicStructure() {
         document.getElementById("change-text").innerHTML = ` <p> 
             <ul>
                 <li> For starters, <b>'!DOCTYPE html'</b> is located at the first line of a HTML document </li>
@@ -41,7 +41,7 @@
             <ul>
             </p>`;
       }
-      function changeText3() {
+      function changeTextOfTags() {
         let tags = `<p>
                         <ul>
                             <li> <b>'html'</b> tag covers the whole document, it should at the beggings and end file, <br> it starts with < html > and needs to be closed with < /html > </li>
@@ -89,15 +89,15 @@
       </header>
       <div class="leftSection">
         <ul>
-          <button onclick="changeText1()">
+          <button onclick="changeTextOfHtml()">
             <li>HTML?</li>
           </button>
           <br />
-          <button onclick="changeText2()">
+          <button onclick="changeTextOfBasicStructure()">
             <li>Basic structure of an HTML document</li>
           </button>
           <br />
-          <button onclick="changeText3()">
+          <button onclick="changeTextOfTags()">
             <li>tags/elements</li>
           </button>
           <br />
