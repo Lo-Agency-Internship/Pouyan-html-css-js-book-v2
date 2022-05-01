@@ -20,7 +20,7 @@
     </style>
   </head>
   <body>
-    <!-- ---JavaScript logic goes here--- -->
+    <!-- ----------JavaScript logic goes here-------- -->
     <script>
       function changeTextOfHtml() {
         document.getElementById(
@@ -80,33 +80,36 @@
         document.getElementById("change-text").innerHTML = tags;
       }
     </script>
-    <!-- ---END of JS--- -->
+    <!-- -------------END of JS-------------- -->
 
     <div class="main">
       <header id="header">
         This my collection of some concepts regarding HTML and future to come
         keywords
       </header>
-      <div class="leftSection">
-        <ul>
-          <button onclick="changeTextOfHtml()">
-            <li>HTML?</li>
-          </button>
-          <br />
-          <button onclick="changeTextOfBasicStructure()">
-            <li>Basic structure of an HTML document</li>
-          </button>
-          <br />
-          <button onclick="changeTextOfTags()">
-            <li>tags/elements</li>
-          </button>
-          <br />
-        </ul>
-      </div>
-      <div class="rightSection">
-        <p id="change-text">
-          Please click on any subjects on left to see the definition here.
-        </p>
+      <div id="wholeSection">
+        <div class="leftSection">
+          <ul>
+            <p>Table Of Content</p>
+            <button onclick="changeTextOfHtml()">
+              <li>HTML?</li>
+            </button>
+            <br />
+            <button onclick="changeTextOfBasicStructure()">
+              <li>Basic structure of an HTML document</li>
+            </button>
+            <br />
+            <button onclick="changeTextOfTags()">
+              <li>Tags/Elements</li>
+            </button>
+            <br />
+          </ul>
+        </div>
+        <div class="rightSection">
+          <p id="change-text">
+            Please click on any subjects on left to see the definition here.
+          </p>
+        </div>
       </div>
     </div>
   </body>

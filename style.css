@@ -1,36 +1,103 @@
 body {
-  box-sizing: border-box;
-  position: absolute;
   width: 100%;
-  height: 100%;
+  height: 100vw;
   background-image: url("images/background.jpg");
   background-repeat: repeat;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 100%;
   box-sizing: border-box;
 }
 
-
-header{
+header {
+  position: relative;
   font-family: "Square Peg", cursive;
   margin-bottom: 2%;
   color: #2b250a;
-  font-size:250%;
+  font-size: 250%;
   text-align: center;
   border-bottom: 9px solid rgb(36, 23, 2);
   border-radius: 90%;
 }
-
-.main {
-  box-sizing: border-box;
-  position: absolute;
+/* ---------------------------------- */
+#wholeSection {
+  position: relative;
+  display: flex;
+  flex-direction: row;
   width: 100%;
   height: 100%;
-  margin-top: 0%;
-  box-sizing: border-box;
 }
 
+/* ---------LeftSection-------------- */
+/* ---------------------------------- */
+.leftSection {
+  font-family: "IM Fell English", serif;
+  display: flex;
+  box-sizing: border-box;
+  left: 1%;
+  position: absolute;
+  width: 32%;
+  height: auto;
+  background-color: rgb(96, 78, 56);
+  border: 3px solid rgb(71, 44, 3);
+  border-radius: 10%;
+}
+
+.leftSection ul {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.leftSection p {
+  font-size: larger;
+  background-color: #2b250a;
+  color: bisque;
+  border-radius: 20px;
+  width: 110%;
+  text-align: center;
+  margin-bottom: 30%;
+}
+
+.leftSection ul li,
+button {
+  font-size: large;
+  list-style-type: none;
+  font-family: "IM Fell English", serif;
+}
+
+.leftSection ul button {
+  padding: 10px;
+  margin-bottom: 10%;
+  width: 100%;
+  background-color: #151106;
+  color: white;
+  transition-duration: 0.3s;
+  cursor: grab;
+  border: 3px solid rgb(71, 44, 3);
+  border-radius: 20px;
+}
+
+.leftSection ul button:hover {
+  background-color: #8f6d16;
+  color: rgb(0, 0, 0);
+}
+
+
+/* ---------RightSection-------- */
+/* ----------------------------- */
 .rightSection {
   box-sizing: border-box;
-  right: 2%;
+  right: 1%;
   position: absolute;
   width: 65%;
   min-height: 42%;
@@ -39,45 +106,7 @@ header{
   border-radius: 5%;
   border: 3px solid rgb(133, 70, 8);
   padding: 1%;
-  
 }
-
-.leftSection {
-  box-sizing: border-box;
-  left: 1%;
-  position: absolute;
-  width: 30%;
-  min-height: 45%;
-  background-color: rgb(96, 78, 56);
-  border: 3px solid rgb(71, 44, 3);
-  border-radius: 10%;
-}
-
-.leftSection ul li,
-button {
-  padding: 5px;
-  margin: 10px;
-  font-size: large;
-  font-family: "IM Fell English", serif;
-  list-style-type: none;
-}
-
-.leftSection ul button {
-  padding: 5px;
-  margin: 10%;
-  width:70% ;
-  background-color: #151106;
-  color: white;
-  transition-duration: 0.3s;
-  cursor: grab ; 
-  border: 3px solid rgb(71, 44, 3);
-  border-radius: 20px;
-}
-.leftSection ul button:hover {
-  background-color: #8f6d16;
-  color: rgb(0, 0, 0);
-}
-
 
 .rightSection p {
   margin: 10px;
@@ -86,3 +115,7 @@ button {
   line-height: 1.5;
 }
 
+.rightSection:hover {
+  background-color: rgb(0, 0, 0);
+  color: rgb(245, 227, 194);
+} 
